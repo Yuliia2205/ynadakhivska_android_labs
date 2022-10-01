@@ -1,1 +1,1 @@
-# ynadakhivska_android_labs
+# This repository contains Android Labs
