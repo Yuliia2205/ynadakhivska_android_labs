@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="logo_text">Question or task</string>
+    <string name="hint_user_field">Enter</string>
+    <string name="main_button">Ok</string>
+    <string name="question_rad_but">Question</string>
+    <string name="task_rad_but">Task</string>
+    <string name="text_view">Your:</string>
+    <string name="task_or_question">Choose type:</string>
+    <string name="complexity">Choose complexity:</string>
+    <string name="complexity_one">High</string>
+    <string name="complexity_two">Medium</string>
+    <string name="complexity_three">Low</string>
+</resources>

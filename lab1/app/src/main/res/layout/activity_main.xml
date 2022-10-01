@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/task_or_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_alternates_light"
+        android:text="@string/task_or_question"
+        android:layout_marginTop="220sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="50sp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_alternates_light"
+        android:text="@string/logo_text"
+        android:layout_marginTop="60sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/complexity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_alternates_light"
+        android:text="@string/complexity"
+        android:layout_marginTop="220sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="220sp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="@color/teal_700"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_alternates_light"
+        android:hint="@string/hint_user_field"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/whiteHint"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_field"
+        android:layout_marginHorizontal="130sp"
+        android:layout_marginTop="220sp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="@font/montserrat_alternates_light"
+        android:text="@string/main_button"
+        tools:ignore="TextContrastCheck"
+        android:onClick="sendMessage"/>
+    
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/yes_rad_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="250sp"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:textColor="@color/white"
+            android:text="@string/question_rad_but"/>
+        <RadioButton
+            android:id="@+id/no_rad_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_rad_but"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:textColor="@color/white"
+            />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_view"
+        android:layout_below="@id/main_button"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/montserrat_alternates_light"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complexity_one"
+            android:layout_marginTop="250sp"
+            android:layout_marginLeft="220sp"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:textColor="@color/white"
+            />
+        <RadioButton
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complexity_two"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="220sp"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:textColor="@color/white"
+            />
+        <RadioButton
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complexity_three"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="220sp"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:textColor="@color/white"
+            />
+    </RadioGroup>
+
+</RelativeLayout>
