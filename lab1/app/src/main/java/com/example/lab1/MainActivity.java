@@ -24,36 +24,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void sendMessage(View view) {
+        radioGroup = findViewById(R.id.radioGroup);
+        textView = findViewById(R.id.selection);
+        editText = findViewById(R.id.user_field);
+        radioGroup1 = findViewById(R.id.radioGroup1);
 
+        int radioId = radioGroup.getCheckedRadioButtonId();
+        int radioIdOne = radioGroup1.getCheckedRadioButtonId();
 
-            public void sendMessage(View view) {
-                radioGroup = findViewById(R.id.radioGroup);
-                textView = findViewById(R.id.selection);
-                editText = findViewById(R.id.user_field);
-                radioGroup1 = findViewById(R.id.radioGroup1);
-                int radioId = radioGroup.getCheckedRadioButtonId();
-                int radioIdOne = radioGroup1.getCheckedRadioButtonId();
-                String textMsg;
-                radioButton = findViewById(radioId);
-                radioButton1 = findViewById(radioIdOne);
-
-
-
-                if(editText.getText().toString().equals("")){
-                    textView.setText("Please, enter user field.");
-                }
-                else if(radioId==-1){
-                    textView.setText("Choose type.");
-                }
-                else if(radioIdOne==-1){
-                    textView.setText("Choose complexity.");
-                }
-                else {
-                    textView.setText("Your information: "  + editText.getText().toString() + " is a " + radioButton.getText() + " with " + radioButton1.getText() + " complexity.");
-                }
+        radioButton = findViewById(radioId);
+        radioButton1 = findViewById(radioIdOne);
 
 
 
+        if(editText.getText().toString().equals("")){
+            textView.setText("Please, enter user field.");
+        }
+        else if(radioId==-1){
+            textView.setText("Choose type.");
+        }
+        else if(radioIdOne==-1){
+            textView.setText("Choose complexity.");
+        }
+        else {
+            textView.setText("Your information: "  + editText.getText().toString() + " is a " + radioButton.getText() + " with " + radioButton1.getText() + " complexity.");
+        }
 
-            }
-        };
+    }
+
+};
