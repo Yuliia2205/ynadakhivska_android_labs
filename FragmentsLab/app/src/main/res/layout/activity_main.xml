@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Введіть завдання"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioButtonEasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Легко"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <RadioButton
+        android:id="@+id/radioButtonAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Середнє"
+        app:layout_constraintStart_toStartOf="@+id/radioButtonEasy"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonEasy" />
+
+    <RadioButton
+        android:id="@+id/radioButtonHard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Складно"
+        app:layout_constraintStart_toStartOf="@+id/radioButtonAverage"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonAverage" />
+
+    <RadioButton
+        android:id="@+id/radioButtonTheoretical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="Теоретичне"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonEasy"
+        app:layout_constraintTop_toTopOf="@+id/radioButtonEasy" />
+
+    <RadioButton
+        android:id="@+id/radioButtonPractical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Практичне"
+        app:layout_constraintStart_toStartOf="@+id/radioButtonTheoretical"
+        app:layout_constraintTop_toTopOf="@+id/radioButtonAverage" />
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ок"
+        android:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonHard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
